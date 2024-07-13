@@ -1,0 +1,426 @@
+@charset "UTF-8";
+
+*{
+	padding : 0;
+	margin : 0;
+	box-sizing : 0;
+}
+
+/* voter view information */
+span{cursor : pointer;}
+
+section{
+	height : 100vh;
+	width : 100vw;
+	background-image : linear-gradient(to right,orange,yellow,green);
+	font-family : comics;
+	display : flex;
+	gap : 20px;
+	justify-content : center;
+	align-items : center;
+	overflow-x : hidden;
+	overflow-y: scroll;
+}
+.Adminlayout,.UserLayout{
+	border : 1px solid blue;
+	border-radius : 20px;
+	height : 300px;
+	width : 300px;
+	padding : 20px;
+	text-align : center;
+	font-size : 20px;
+	color : black;
+	background-image : linear-gradient(to right,indigo,violet);
+ }
+ 
+i{
+	font-size : 100px;
+	margin-top : 50px;
+	margin-bottom : 30px;
+}
+
+a{
+	text-decoration-line : none;
+	color : black;
+	font-family : sans;
+	font-size : 20px;
+	font-weight : bold;
+}
+	
+p{
+	padding-top : 10px;
+	font-size : 15px;
+}
+
+
+/* admin information */
+
+.admin{
+	display : flex;
+	background-color : linear-gradient(to top,red,purple,orange,green,violet,yellow,gold,silver);;
+	
+}
+img{
+	background-image : transparent;
+	mix-blend-mode : multiply;
+}
+	
+.admin_form{
+	height : 400px;
+	width : 400px;
+	padding-top : 5rem;
+	font-family : arial;
+	font-size : 20px;
+	color : purple;
+	border : 1px solid black;
+	position : relative;
+	background-color: red;
+}
+.admin_form h1{
+	padding-top : 0px;
+	padding-bottom : 20px;
+	text-align : center;
+}
+
+.admin_form input{
+    height : 2.6rem;
+    width : 15rem;
+    padding-left : 25px;
+    border-color : transparent;
+    border-radius : 5px;
+    margin-top: 30px;
+    margin-left : 60px;
+    background-color : gold;
+}
+.admin_form .password{
+	margin-bottom : 20px;
+}
+.admin_form .checkbox{
+	padding : 5px;
+	height : 18px;
+	width : 18px;
+	position : absolute;
+	top : 17.43rem;
+	left : 20px;
+	accent-color : red;
+	color : purple;
+}
+
+.admin_form span{
+	padding-left : 110px;
+	font-size : 15px;
+	margin-top : 20px;
+	cursor : pointer;
+}
+
+.admin_form .btn{
+	height : 45px;
+	width : 110px;
+	color : blue;
+	background-color : #004040;
+	border-radius : 15px;
+	font-weight : bolder;
+    padding-left : 0px;
+    border-radius : 15px;
+    margin-top: 5rem;
+    margin-left : 8.5rem;
+    cursor : pointer;
+}
+
+/* user information */
+
+.user{
+	position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color : teal;
+}
+.userForm{
+	height: 600px;
+    width: 400px;
+    border: 1px solid black;
+    text-align: center;
+    background-color: rgb(56, 42, 165);
+    margin: 12%;
+    border-top-left-radius: 20%;
+    border-bottom-right-radius: 20% ;
+
+    h1{
+        margin-top: 8rem;
+        color: rgb(120, 249, 249);
+    }
+    p{
+        margin-top: 10px;
+        margin-bottom: 30px;
+        color: rgb(120, 249, 249);
+    }
+    span{
+        font-size: 15px;
+        padding-right: 120px;
+        color: rgb(43, 1, 1);
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+}
+.userForm input{
+	border-radius: 5px;
+    border-color: transparent;
+    padding: 15px 40px;
+    margin-top: 15px;
+}
+.userForm i{
+	position: absolute;
+}
+.user .usericon{
+    position: absolute;
+    padding-top: 20px;
+    font-size: 100px;
+    z-index: 1;
+    background-color: rgb(22, 5, 96);
+    color: pink;
+    height: 150px;
+    width: 165px;
+    border-radius: 50%;
+    border: 1px solid black;
+    top: -23px;
+    left: 42.3rem;
+
+}
+.userForm form .username{
+	 top: 18.2rem;
+    left: 40.2rem;
+    font-size : 18px;
+}
+.userForm form .emailicon{
+     top: 22.4rem;
+    left: 40.2rem;
+    font-size : 18px;
+}
+.userForm form .passwordicon{
+    top: 26.2rem;
+    left: 40.2rem;
+    font-size : 18px;
+}
+.userForm form .radio{
+    height: 15px;
+    width: 20px;
+    padding: 0;
+    margin-top: 30px;
+    margin-right: 10px;
+    left: 0;
+    text-align: start;
+    align-content: center;
+    accent-color: red;
+}
+.userForm form button{
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: rgb(37, 37, 145);
+    border-color: transparent;
+    box-shadow: 2px 2px 2px rgb(20, 2, 87) inset,
+                2px 2px 2px rgb(5, 68, 113) inset,
+                2px 2px 2px rgb(4, 123, 115) inset;
+    
+    margin-top: 20px;
+}
+
+/* voter card */
+.voterCard{
+	background-color : teal;
+	height : 700px;
+	width : 500px;
+	padding : 20px;
+	text-align : center;
+	color : rgb(0, 0, 0);	
+	font-size : 20px;
+}
+.voterCard-1{
+	height : 630px;
+}
+.voterCard h1{
+	font-size : 30px;
+	color : white;
+	font-family : arial;
+	margin-bottom : 40px;
+}
+.voterCard input{
+	padding : 13px 30px;
+	margin-bottom : 20px;
+	
+}
+.voterCard label{
+	margin : 0 11px;
+}
+.voterCard #age{
+	margin-left : 62px;
+}
+.voter #birth{
+	margin-left : 74px;
+}
+
+.voterCard #gender{margin-left : 20px;}
+
+.voterCard .votername{margin-left : 39px;} 
+.voterCard .voteremail{margin-left : 89px;} 
+.voterCard .voterpass{margin-left : 59px;} 
+.voterCard .voteraddress{margin-left : 22px;}
+.voterCard .voterage{margin-left : 52px;}
+.voterCard .male{margin-left : 52px;}
+.voterCard .female{margin-left : 10px;}
+.voterCard .other{margin-left : 10px;}
+.voterCard .father{margin-left : 31px;}
+.voterCard .mother{margin-left : 25px;}
+.voterCard .birth{margin-left : 32px;}
+
+.voterCard button{
+	padding : 15px 25px;
+	border-radius : 15px;
+	margin-top : 15px;
+	background-color : blue;
+	outline : none;
+	color : white;
+}
+
+/* id card css  */
+
+.voterid{display : flex;}
+.id_card{
+	font-family : krutiDev,serif;
+	background-image: url("./images/voteidimage.jpg");
+	background-size : cover;
+	height : 570px;
+	width : 400px;
+}
+.id_card nav{
+	font-size : 10px;
+	display : block;
+	text-align : center;
+	position : relative; 
+	
+	img{
+	position : absolute;
+	height : 50px;
+	top : 17px;
+	left : 20px;
+	}
+	h1{
+	 margin-top : 10px;
+	 padding-top : 20px;
+	}
+	.eng{
+	 margin-top:-30px;
+	 margin-left : 1px;
+	}
+	
+}
+.id_card header{
+	background-color : transparent;
+	
+	img{
+	color : transparent;
+	margin : 30px 90px 30px 100px;
+	height : 200px;
+	border: 1px groove black;
+	}
+	
+	h1{
+	
+	img{
+	height : 70px;
+	margin-top : -18px;
+	margin-left : 28px;
+	margin-bottom : -20px;
+	border : none;
+	}	
+
+	text-align : center;
+	font-size : 16px;
+	font-weight : 100px;
+	margin-top : -20px;
+	
+	}
+	
+}
+.id_card footer{
+	font-size : 8.5px;
+	
+	h1{
+	padding-top : 7px;
+	padding-left : 20px;
+	}
+	
+	.sim{
+		padding-left : 20px;
+		padding-right : 10px;
+	}
+	.nirvachak{padding-left : 30px;}
+	.elector{padding-left : 36px;} 
+	.father {padding-left : 52px;}
+	.father1{padding-left : 40px;} 
+	.gender{padding-left : 75px;} 
+	.age {padding-left : 14px;}
+	.date{padding-left : 22px;}
+}
+
+.voterid .update{
+	height : 100px;
+	width : 100px;
+	border : 1px solid sky;
+	background-color : teal;
+	color : white;
+	font-size : 25px;
+	font-weight : bolder;
+	margin-top : 25rem;
+	border-radius : 50%;
+	
+	h1{
+		text-align : center;
+		font-size : 8px;
+		margin-top : 30px;
+	}
+	
+	h1 a{
+	font-size : 15px;
+	color :  violet;
+	}
+}
+
+/* view data table here */
+
+.viewTable{
+	margin : 0;
+	height : 100vh;
+	background-color : transparent;
+	/* overflow : scroll; */
+	
+	h1{
+	text-align : center;
+	font-size : 30px;
+	color : navy;
+	font-weight : bolder;
+	letter-spacing : 1px;
+	padding-top : 3rem;
+	padding-bottom : 40px;
+	text-shadow: 2px 1px red;
+	}
+	
+	table{
+	 border-collapse: separate;
+     border-spacing: 10px;
+     color : #ff0080;
+     font-size : 18px;
+	}
+	
+	th {
+  	 padding: 10px; /* This is like cellpadding */
+	}
+	td {
+  	 padding: 10px; /* This is like cellpadding */
+	}
+	a{
+	color : navy;
+	font-size : 18px;
+	}
+}
+
+
+
